@@ -1,0 +1,21 @@
+name: GitHub Actions Demo
+
+
+on: 
+  push:   # Trigger on push to any branch
+  workflow_dispatch:  # Allow manual triggering
+  
+
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: show files
+        run: |
+          ls -ltr
+
