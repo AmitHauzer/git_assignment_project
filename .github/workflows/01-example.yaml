@@ -1,11 +1,7 @@
 name: GitHub Actions Demo
 
 
-on: 
-  push:   # Trigger on push to any branch
-  workflow_dispatch:  # Allow manual triggering
-  
-
+on: ["push", "workflow_dispatch"]
 
 jobs:
   test:
